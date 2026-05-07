@@ -7,26 +7,6 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    role: 'AI Engineering Intern',
-    company: 'Stellar AI',
-    period: 'Placeholder',
-    bullets: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-    ],
-  },
-  {
-    role: 'Machine Learning Engineering Intern',
-    company: 'Snorkel AI',
-    period: 'Placeholder',
-    bullets: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
-    ],
-  },
-  {
     role: 'Applied AI Research Assistant',
     company: 'Pestilli Lab, UT Austin',
     period: 'August 2025 - Present',

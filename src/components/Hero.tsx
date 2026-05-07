@@ -38,12 +38,13 @@ export function Hero() {
             initial={reduceMotion ? undefined : { opacity: 0, y: 12 }}
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
-            className="mb-7 flex h-32 w-32 items-center justify-center overflow-hidden rounded-[28px] border border-white/15 bg-white/5 shadow-[0_0_50px_rgba(59,130,246,0.18)] backdrop-blur"
+            className="mb-7 h-36 w-36 overflow-hidden rounded-[30px] border border-white/15 bg-white/5 shadow-[0_0_50px_rgba(59,130,246,0.18)] backdrop-blur"
           >
-            <div className="flex h-full w-full flex-col items-center justify-center bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))]">
-              <div className="h-14 w-14 rounded-full border border-white/20 bg-white/10" />
-              <div className="mt-3 px-3 text-[11px] font-medium uppercase tracking-[0.16em] text-slate-300">Headshot</div>
-            </div>
+            <img
+              src="/headshot.png"
+              alt="Portrait of Satvik Agarwal"
+              className="h-full w-full object-cover object-center"
+            />
           </motion.div>
 
           <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-slate-300 backdrop-blur">
