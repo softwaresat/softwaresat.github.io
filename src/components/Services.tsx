@@ -51,9 +51,9 @@ export function Services() {
     <section id="services" className="px-6 py-16 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">
-          <div className="text-sm font-medium uppercase tracking-[0.22em] text-[#bf5700]">Systems I Can Build</div>
-          <h2 className="mt-4 text-3xl font-semibold text-slate-900 sm:text-4xl">What I Can Build For You</h2>
-          <p className="mt-5 text-base leading-8 text-slate-600">
+          <div className="text-sm font-medium uppercase tracking-[0.22em] text-amber-400">Systems I Can Build</div>
+          <h2 className="mt-4 text-3xl font-semibold text-slate-50 sm:text-4xl">What I Can Build For You</h2>
+          <p className="mt-5 text-base leading-8 text-slate-300">
             AI prototypes, full-stack products, mobile apps, and automation systems - built with the speed of a
             freelancer and the structure of an engineer.
           </p>
@@ -69,16 +69,16 @@ export function Services() {
                 whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.35, delay: reduceMotion ? 0 : index * 0.05 }}
-                className="rounded-[28px] border border-stone-200 bg-white p-6 shadow-sm"
+                className="rounded-[28px] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_60px_rgba(2,6,23,0.28)] backdrop-blur-xl"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#f0d7c3] bg-[#fff8f3] text-[#bf5700]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-amber-400/25 bg-amber-400/10 text-amber-300">
                   <Icon size={20} />
                 </div>
-                <h3 className="mt-5 text-xl font-semibold text-slate-900">{service.title}</h3>
+                <h3 className="mt-5 text-xl font-semibold text-slate-50">{service.title}</h3>
                 <div className="mt-5 space-y-3">
                   {service.items.map((item) => (
-                    <div key={item} className="flex gap-3 text-sm leading-7 text-slate-600">
-                      <div className="mt-2 h-2 w-2 rounded-full bg-[#bf5700]" />
+                    <div key={item} className="flex gap-3 text-sm leading-7 text-slate-300">
+                      <div className="mt-2 h-2 w-2 rounded-full bg-amber-300" />
                       <p>{item}</p>
                     </div>
                   ))}
